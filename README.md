@@ -6,7 +6,7 @@ Mail Daily is an application designed to automatically fetch emails, categorize 
 ## Setup
 - [x] Set up Python environment and install required packages.
 - [x] Enable the Gmail API and download `credentials.json`.
-- [x ] Set up Google Cloud project and configure OAuth consent screen.
+- [x] Set up Google Cloud project and configure OAuth consent screen.
 
 ## Development Checklist
 
@@ -17,8 +17,10 @@ Mail Daily is an application designed to automatically fetch emails, categorize 
 - [x] Write a function to add a label into an email
 
 ### Step 2: Email Processing
-- [ ] Develop a categorization system for incoming emails.
+- [ ] Develop a categorization system for incoming emails. 
+- [ ] Define categories and Implement the Categorization Function
 - [ ] Implement functionality to apply Gmail labels based on email categories.
+- [ ] Use Machine Learning to categorise emails. Use Name entity extractors to understand the meaning to assign category.
 
 ### Step 3: Email Summarization
 - [ ] Integrate or develop a summarization algorithm to extract key points from emails.
