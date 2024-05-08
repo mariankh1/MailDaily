@@ -4,15 +4,17 @@
 Mail Daily is an application designed to automatically fetch emails, categorize them, apply labels on Gmail, summarize their content, convert the summary to speech, and perform recommended actions based on the category of the email.
 
 ## Setup
-- [ ] Set up Python environment and install required packages.
-- [ ] Enable the Gmail API and download `credentials.json`.
-- [ ] Set up Google Cloud project and configure OAuth consent screen.
+- [x] Set up Python environment and install required packages.
+- [x] Enable the Gmail API and download `credentials.json`.
+- [x ] Set up Google Cloud project and configure OAuth consent screen.
 
 ## Development Checklist
 
 ### Step 1: Gmail API Integration
-- [ ] Authenticate and establish a connection with the Gmail API.
-- [ ] Write a function to fetch emails based on specific queries.
+- [x] Authenticate and establish a connection with the Gmail API.
+- [x] Write a function to fetch emails based on specific queries.
+- [x] Write a function to list existing lables
+- [x] Write a function to add a label into an email
 
 ### Step 2: Email Processing
 - [ ] Develop a categorization system for incoming emails.
