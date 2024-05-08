@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail Daily</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            fetchEmails();
+
+            function fetchEmails() {
+                $.get('/fetch_emails', function(data) {
+                    data.forEach(email => {
+                        $('#emails').append(`<li>${email.subject} - <button onclick="applyLabel('${email.id}', 'To-Review')">Apply 'To-Review'</button></li>`);
+                    });
+                });
+            }
+
+            window.applyLabel = function(emailId, labelName) {
+                $.post('/apply_label', JSON.stringify({email_id: emailId, label_name: labelName}), function() {
+                    alert('Label applied');
+                }).fail(function(response) {
+                    alert(response.responseJSON.message);
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Mail Daily</h1>
+    <ul id="emails"></ul>
+</body>
+</html>
