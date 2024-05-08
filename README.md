@@ -19,7 +19,7 @@ Mail Daily is an application designed to automatically fetch emails, categorize 
 ### Step 2: Email Processing
 - [ ] Develop a categorization system for incoming emails. 
 - [ ] Define categories and Implement the Categorization Function
-- [ ] Implement functionality to apply Gmail labels based on email categories.
+- [x] Implement functionality to apply Gmail labels based on email categories.
 - [ ] Use Machine Learning to categorise emails. Use Name entity extractors to understand the meaning to assign category.
 
 ### Step 3: Email Summarization
