@@ -15,6 +15,7 @@ Mail Daily is an application designed to automatically fetch emails, categorize 
 - [x] Authenticate and establish a connection with the Gmail API.
   - [x] Write a function to fetch emails based on specific queries.
   - [x] Write a function to list existing labels.
+  - [x] Write a function to createa a label if does not exist.
   - [x] Write a function to apply a label to an email.
 
 #### Step 2: Email Processing
