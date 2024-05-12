@@ -35,6 +35,13 @@ def fetch_unread_emails(gmail):
     messages = gmail.get_messages(query=query, include_spam_trash=False)
     return messages
 
+def ensure_labels_exist(gmail):
+    """Ensure all necessary labels exist in Gmail."""
+    existing_labels = {label.name for label in gmail.list_labels()}
+    missing_labels = set(labels.keys()) - existing_labels
+    for label in missing_labels:
+        gmail.create_label(label)  # Create each missing label
+    print(f"Created missing labels: {missing_labels}")
 
 def apply_label(gmail, message, label_id):
     """Apply the given label to the email message."""

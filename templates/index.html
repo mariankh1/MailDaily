@@ -11,7 +11,7 @@
             function fetchEmails() {
                 $.get('/fetch_emails', function(data) {
                     data.forEach(email => {
-                        $('#emails').append(`<li>${email.subject} - <button onclick="applyLabel('${email.id}', 'To-Review')">Apply 'To-Review'</button></li>`);
+                        $('#emails').append(`<li>${email.subject} - <button onclick="applyLabel('${email.id}', 'To-Review')">Apply 'To-Review'</button> - <button onclick="listenToSummary('${email.id}')">Listen to Summary</button></li>`);
                     });
                 });
             }
@@ -21,6 +21,17 @@
                     alert('Label applied');
                 }).fail(function(response) {
                     alert(response.responseJSON.message);
+                });
+            }
+
+            window.listenToSummary = function(emailId) {
+                alert(emailId)
+                $.post('/get_email_summary_audio', JSON.stringify({email_id: emailId}), function(data) {
+                    // Create an audio element and play the summary audio
+                    var audio = new Audio(URL.createObjectURL(data));
+                    audio.play();
+                }).fail(function(response) {
+                    alert('Error occurred while fetching email summary audio.');
                 });
             }
         });
