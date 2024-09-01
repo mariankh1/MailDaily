@@ -72,5 +72,5 @@ If you encounter any bugs or have feature requests, please open an issue on the 
 ### Additional Information
 
 Development Environment: Ensure that you have set up your development environment as outlined in the Setup Guide.
-Contact: For questions or additional help, you can reach out to the project maintainers via Discussions or email us at contact@yourdomain.com.
+Contact: For questions or additional help, you can reach out to the project maintainers via Discussions or email us at mailydailyproject@gmail.com
 Thank you for contributing to MailyDaily and helping us improve the app!
