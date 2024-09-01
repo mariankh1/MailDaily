@@ -70,6 +70,7 @@ or
 ## Contributing
 
 Contributions are welcome! Please check the CONTRIBUTE.md file for guidelines on how to contribute to the project.
+For help, contact us at mailydailyproject@gmail.com 
 
 ## License
 
