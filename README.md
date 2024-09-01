@@ -47,7 +47,7 @@ To get started with MailyDaily, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MailyDaily.git
+   git clone https://github.com/mariankh1/MailyDaily.git
     ```
    
 2. Install dependencies:
