@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MailyDaily</title>
+    <title>MailyDaily 📬</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #f9f9f9, #e0e0e0);
         }
         header {
             background: #333;
@@ -21,6 +21,11 @@
         }
         header h1 {
             margin: 0;
+            font-size: 2rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
         }
         .container {
             width: 80%;
@@ -36,6 +41,13 @@
         }
         h2 {
             color: #333;
+        }
+        ul, ol {
+            margin: 0;
+            padding: 0 0 0 2rem;
+        }
+        li {
+            margin: 0.5rem 0;
         }
         a {
             color: #007BFF;
@@ -58,51 +70,45 @@
 <body>
     <header>
         <div class="container">
-            <h1>MailyDaily</h1>
+            <h1>MailyDaily 📬</h1>
             <p>Your daily email assistant</p>
         </div>
     </header>
 
     <div class="container main-content">
-        <h2>Welcome to MailyDaily</h2>
-        <p><strong>MailyDaily</strong> is a cross-platform mobile app designed to help you manage your Gmail inbox with ease. Built using React Native, MailyDaily provides a daily summary of your emails and offers conversational assistance for managing your inbox efficiently.</p>
+        <h2>About MailyDaily</h2>
+        <p><strong>MailyDaily</strong> is a cross-platform mobile app built with React Native that helps you efficiently manage your Gmail inbox through a conversational and voice-assisted interface. The app provides a daily summary of your new emails and suggests actions for each, such as replying, archiving, or scheduling follow-ups, all in a user-friendly and intuitive format. With the integration of a Hugging Face model, MailyDaily offers personalized email summaries and automated response suggestions to help you keep your inbox clean and organized effortlessly.</p>
 
-        <h2>Features</h2>
+        <h2>Key Features</h2>
         <ul>
-            <li><strong>Daily Email Summaries:</strong> Get a concise summary of your new emails each morning.</li>
-            <li><strong>Action Suggestions:</strong> Receive actionable suggestions such as replying, archiving, or scheduling tasks.</li>
-            <li><strong>Voice Assistance:</strong> Interact with your inbox using voice commands and responses.</li>
-            <li><strong>Privacy Focused:</strong> Your data is processed locally to ensure your privacy.</li>
+            <li><strong>Cross-Platform Support:</strong> Built with React Native, MailyDaily runs seamlessly on both Android and iOS devices, providing a consistent user experience.</li>
+            <li><strong>Gmail Integration:</strong> Securely log in with your Gmail account to fetch and manage your emails directly from the app.</li>
+            <li><strong>Conversational Interface:</strong> Navigate through your emails in a conversational style, making it easier to process and take action on each email.</li>
+            <li><strong>Voice Assistant:</strong> Use the built-in voice assistant to interact with your emails hands-free, including reading summaries, replying, and more.</li>
+            <li><strong>AI-Powered Email Summaries:</strong> Leveraging a custom-trained Hugging Face model, MailyDaily provides concise summaries and suggested actions for each email.</li>
+            <li><strong>Privacy-Focused:</strong> All data is processed locally on your device, ensuring your privacy and keeping your sensitive information secure.</li>
         </ul>
 
-        <h2>Getting Started</h2>
+        <h2>How It Works</h2>
         <ol>
-            <li><strong>Clone the Repository:</strong>
-                <pre><code>git clone https://github.com/yourusername/MailyDaily.git</code></pre>
-            </li>
-            <li><strong>Navigate to the Project Directory:</strong>
-                <pre><code>cd MailyDaily</code></pre>
-            </li>
-            <li><strong>Install Dependencies:</strong>
-                <pre><code>npm install</code></pre>
-            </li>
-            <li><strong>Run the App:</strong>
-                <pre><code>npx react-native run-android</code> or <code>npx react-native run-ios</code></pre>
-            </li>
+            <li><strong>Sign In with Gmail:</strong> Log in securely using your Gmail account credentials.</li>
+            <li><strong>Daily Email Review:</strong> Each morning, MailyDaily fetches your new emails and provides a cheerful summary with suggested actions.</li>
+            <li><strong>Take Action Effortlessly:</strong> Respond to emails, archive, delete, or set reminders directly through the conversational interface or voice commands.</li>
+            <li><strong>Stay Organized:</strong> Use the app to maintain a clean and tidy inbox, prioritizing important messages and filtering out spam.</li>
         </ol>
 
-        <h2>Contributing</h2>
-        <p>We welcome contributions to improve MailyDaily! Please read our <a href="https://github.com/yourusername/MailyDaily/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for guidelines on how to get involved.</p>
-
-        <h2>Report Issues</h2>
-        <p>If you encounter any bugs or have feature requests, please open an issue on our <a href="https://github.com/yourusername/MailyDaily/issues">GitHub Issues</a> page.</p>
-
-        <h2>Contact</h2>
-        <p>For more information or questions, you can reach us at <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a> or visit our <a href="https://github.com/yourusername/MailyDaily/discussions">Discussions</a> page.</p>
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>React Native:</strong> For cross-platform mobile app development.</li>
+            <li><strong>Google Sign-In:</strong> For secure authentication with Gmail.</li>
+            <li><strong>TensorFlow Lite:</strong> For running AI models directly on mobile devices.</li>
+            <li><strong>Hugging Face Transformers:</strong> For natural language processing and generating email summaries.</li>
+            <li><strong>Async Storage:</strong> For secure local data storage.</li>
+        </ul>
     </div>
 
     <footer>
-        <p>&copy; 2024 MailyDaily. All rights reserved.</p>
+        <p>&copy; 2024 MailyDaily. All rights reserved. This is an open-source project. Check out the repository on <a href="https://github.com/yourusername/MailyDaily" target="_blank">GitHub</a>.</p>
     </footer>
 </body>
 </html>
