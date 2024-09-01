@@ -69,7 +69,7 @@ or
 
 ## Contributing
 
-Contributions are welcome! Please check the CONTRIBUTING.md file for guidelines on how to contribute to the project.
+Contributions are welcome! Please check the CONTRIBUTE.md file for guidelines on how to contribute to the project.
 
 ## License
 
