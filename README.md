@@ -1,6 +1,21 @@
 # MailyDaily 📬 a Generative-AI Mail assistant
 
-**MailyDaily** is a cross-platform mobile app built with React Native that helps you efficiently manage your Gmail inbox through a conversational and voice-assisted interface. The app provides a daily summary of your new emails and suggests actions for each, such as replying, archiving, or scheduling follow-ups, all in a user-friendly and intuitive format. With the integration of a Hugging Face model, MailyDaily offers personalized email summaries and automated response suggestions to help you keep your inbox clean and organized effortlessly.
+## About MailyDaily
+
+**MailyDaily** is a smart, cross-platform mobile app designed to help you manage your Gmail inbox more efficiently and effortlessly. Built with React Native, MailyDaily leverages the power of AI to provide a daily email review in a conversational style. The app not only summarizes your new emails but also suggests actions like replying, archiving, or setting reminders, all through a user-friendly and interactive interface.
+
+Our goal with MailyDaily is to revolutionize the way you interact with your emails by introducing a voice-assisted, hands-free experience that helps you stay organized and on top of your communication. By integrating a custom-trained Hugging Face model, MailyDaily provides personalized email summaries and automates routine tasks, helping you save time and maintain a clutter-free inbox.
+
+MailyDaily is designed with privacy and security in mind. All data is processed locally on your device, ensuring that your sensitive information remains private and secure.
+
+### Why MailyDaily?
+
+- **Efficiency**: Quickly process and manage your emails with AI-powered summaries and action suggestions.
+- **Simplicity**: Navigate through your inbox using a conversational, intuitive interface.
+- **Voice Assistance**: Interact with your emails hands-free with the built-in voice assistant.
+- **Privacy-First**: Enjoy peace of mind knowing that your data is processed securely on your device.
+
+Join us in transforming email management and experience a smarter way to handle your inbox with MailyDaily!
 
 ## Key Features
 
