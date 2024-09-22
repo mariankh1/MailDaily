@@ -1,77 +1,99 @@
 # MailyDaily 📬 a Generative-AI Mail assistant
 
-## About MailyDaily
+# MailyDaily Features Implementation Checklist 📬
 
-**MailyDaily** is a smart, cross-platform mobile app designed to help you manage your Gmail inbox more efficiently and effortlessly. Built with React Native, MailyDaily leverages the power of AI to provide a daily email review in a conversational style. The app not only summarizes your new emails but also suggests actions like replying, archiving, or setting reminders, all through a user-friendly and interactive interface.
+## Overview
 
-Our goal with MailyDaily is to revolutionize the way you interact with your emails by introducing a voice-assisted, hands-free experience that helps you stay organized and on top of your communication. By integrating a custom-trained Hugging Face model, MailyDaily provides personalized email summaries and automates routine tasks, helping you save time and maintain a clutter-free inbox.
+This document provides a checklist for the features to be implemented in the MailyDaily project. Each feature is listed with a brief description and a checkbox to track progress.
 
-MailyDaily is designed with privacy and security in mind. All data is processed locally on your device, ensuring that your sensitive information remains private and secure.
+## Features
 
-### Why MailyDaily?
+### 1. **User Authentication**
 
-- **Efficiency**: Quickly process and manage your emails with AI-powered summaries and action suggestions.
-- **Simplicity**: Navigate through your inbox using a conversational, intuitive interface.
-- **Voice Assistance**: Interact with your emails hands-free with the built-in voice assistant.
-- **Privacy-First**: Enjoy peace of mind knowing that your data is processed securely on your device.
+- [ ] **Integrate Gmail Authentication**  
+  *Implement secure Gmail login using Firebase Authentication.*
 
-Join us in transforming email management and experience a smarter way to handle your inbox with MailyDaily!
+### 2. **Email Fetching and Management**
 
-## Key Features
+- [ ] **Fetch New Emails**  
+  *Implement functionality to securely fetch new emails from the user's Gmail account.*
 
-- **Cross-Platform Support**: Built with React Native, MailyDaily runs seamlessly on both Android and iOS devices, providing a consistent user experience.
-- **Gmail Integration**: Securely log in with your Gmail account to fetch and manage your emails directly from the app.
-- **Conversational Interface**: Navigate through your emails in a conversational style, making it easier to process and take action on each email.
-- **Voice Assistant**: Use the built-in voice assistant to interact with your emails hands-free, including reading summaries, replying, and more.
-- **AI-Powered Email Summaries**: Leveraging a custom-trained Hugging Face model, MailyDaily provides concise summaries and suggested actions for each email.
-- **Privacy-Focused**: All data is processed locally on your device, ensuring your privacy and keeping your sensitive information secure.
+- [ ] **Display Email Summary**  
+  *Provide a daily summary of new emails including sender, subject, and a brief content summary.*
 
-## How It Works
+### 3. **Conversational Interface**
 
-1. **Sign In with Gmail**: Log in securely using your Gmail account credentials.
-2. **Daily Email Review**: Each morning, MailyDaily fetches your new emails and provides a cheerful summary with suggested actions.
-3. **Take Action Effortlessly**: Respond to emails, archive, delete, or set reminders directly through the conversational interface or voice commands.
-4. **Stay Organized**: Use the app to maintain a clean and tidy inbox, prioritizing important messages and filtering out spam.
+- [ ] **Conversational UI**  
+  *Create a conversational interface to navigate through emails and present actions.*
 
-## Technologies Used
+- [ ] **Action Suggestions**  
+  *Suggest actions for each email, such as replying, archiving, or scheduling follow-ups.*
 
-- **React Native**: For cross-platform mobile app development.
-- **Google Sign-In**: For secure authentication with Gmail.
-- **TensorFlow Lite**: For running AI models directly on mobile devices.
-- **Hugging Face Transformers**: For natural language processing and generating email summaries.
-- **Async Storage**: For secure local data storage.
+### 4. **Voice Assistance**
 
-## Getting Started
+- [ ] **Voice Command Integration**  
+  *Implement voice command functionality to interact with emails hands-free.*
 
-To get started with MailyDaily, follow these steps:
+- [ ] **Voice-Read Summaries**  
+  *Allow the app to read out email summaries using text-to-speech.*
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mariankh1/MailyDaily.git
-    ```
-   
-2. Install dependencies:
- ```bash
-    npm install
- ``` 
+### 5. **AI-Powered Features**
 
-3. Set up Google Sign-In and TensorFlow Lite as per the instructions.
-   
-5. Run the app on an emulator or physical device:
+- [ ] **Email Summarization**  
+  *Integrate Hugging Face Transformers to generate concise summaries of emails.*
 
- ```
-  npx react-native run-android
- ```
-or
- ```
-  npx react-native run-ios
- ```
+- [ ] **Automated Response Suggestions**  
+  *Provide AI-generated suggestions for responding to emails.*
 
-## Contributing
+### 6. **Privacy and Security**
 
-Contributions are welcome! Please check the CONTRIBUTE.md file for guidelines on how to contribute to the project.
-For help, contact us at mailydailyproject@gmail.com 
+- [ ] **Local Data Processing**  
+  *Ensure all data is processed locally on the user's device to maintain privacy.*
 
-## License
+- [ ] **Secure Storage**  
+  *Implement secure local storage for email data and user settings.*
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### 7. **Cross-Platform Support**
+
+- [ ] **Android Compatibility**  
+  *Ensure the app functions correctly on Android devices.*
+
+- [ ] **iOS Compatibility**  
+  *Ensure the app functions correctly on iOS devices.*
+
+### 8. **User Experience and Design**
+
+- [ ] **Intuitive UI Design**  
+  *Design a user-friendly and intuitive interface for both email management and voice interaction.*
+
+- [ ] **Consistent User Experience**  
+  *Ensure a consistent user experience across different devices and screen sizes.*
+
+### 9. **Testing and Quality Assurance**
+
+- [ ] **Unit Tests**  
+  *Write unit tests to cover core functionalities and ensure stability.*
+
+- [ ] **Integration Tests**  
+  *Conduct integration tests to verify that all features work together seamlessly.*
+
+- [ ] **User Acceptance Testing**  
+  *Perform user acceptance testing to gather feedback and make improvements.*
+
+### 10. **Deployment and Maintenance**
+
+- [ ] **Build for Production**  
+  *Prepare and build the app for production releases on Android and iOS.*
+
+- [ ] **Submit to App Stores**  
+  *Submit the app to Google Play Store and Apple App Store.*
+
+- [ ] **Monitor and Update**  
+  *Monitor user feedback, fix bugs, and release updates as needed.*
+
+## Notes
+
+- Ensure compliance with GDPR and other relevant privacy regulations.
+- Continuously update the Hugging Face model for improved performance.
+
+
